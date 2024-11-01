@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333; /* Background color of navbar */
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Align the items to the right */
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none; /* Remove underline */
+    margin-left: auto;
+
+}
+
+
+ul.navbar li a:hover {
+    background-color: #111; /* Change background on hover */
+}
+
+
+
+  #map { 
+    height: 500px; 
+    width:  100%;
+    margin-top: 100px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.heading{
+    position: relative;
+    cursor: pointer;
+    padding: 10px, 20px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.heading:hover{
+    transform: scale(1.05);
+}
+.list{
+    display: none;
+    margin-top: 5px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    padding: 5px 0;
+    list-style-type: none;
+    width: 180px;   
+}
+.list li {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowarp;
+}
+
+.list li:hover {
+    background-color: #ddd;
+    
+
+}
+#createPathButton {
+    display: none;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#createPathButton:hover {
+    background-color: #45a049;
+}

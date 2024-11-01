@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="acads.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="para">Welcome! The map of IITM</div>
+    <!-- <div class="image-row">
+        
+          <img id="toggleAcad" src="acad.webp" alt="academic">
+      </div> -->
+      <div class="container">
+        <div class="heading" onclick="toggleDropdown('list1')">DEPARTMENTS
+            <ul id="list1" class="list">
+                <li onclick="addMarker([12.991778, 80.228678], event)">Aerospace engineering</li>
+                <li onclick="addMarker([12.989294, 80.227530], event)">Bio-technology</li>
+                <li onclick="addMarker([12.990306,80.230511 ], event)">Chemical engineering</li>
+                <li onclick="addMarker([12.987991,80.232498 ], event)">Applied Chemistry Block</li>
+                <li onclick="addMarker([12.989585,80.229338 ], event)">Building Science Block</li>
+                <li onclick="addMarker([12.988972,80.229478], event)">Computer Science engineering</li>
+                <li onclick="addMarker([12.988662,80.230648 ], event)">Electrical engineering</li>
+                <li onclick="addMarker([12.990131,80.228337 ], event)">Engineering design</li>
+                <li onclick="addMarker([12.990141,80.232273 ], event)">Humanities & Sciences</li>
+                <li onclick="addMarker([ 12.991497,80.234573], event)">Dept. of Management studies</li>
+                <li onclick="addMarker([12.993239,80.230063 ], event)">Mathematics</li>
+                <li onclick="addMarker([ 12.990288,80.231077], event)">Mechanical Engineering</li>
+                <li onclick="addMarker([12.993010,80.230213 ], event)">Matallurgical & Materials engineering</li>
+                <li onclick="addMarker([12.990557,80.226727 ], event)">Ocean engineering</li>
+                <li onclick="addMarker([12.988898,80.232419 ], event)">Physics</li>
+    
+            </ul>
+        </div>
+        <div class="heading" onclick="toggleDropdown('list2')">CENTRES
+            <ul id="list2" class="list">
+                <li data-lat="" data-lng="">New Academic Complex</li>
+                <li data-lat="" data-lng="">Central Electronic Centre</li>
+                <li data-lat="" data-lng="">Central Workshop</li>
+                <li data-lat="" data-lng="">Centre for Continuing Education</li>
+                <li data-lat="" data-lng="">Central Photographic Section</li>
+                <li data-lat="" data-lng="">Central Glass Blowing Section</li>
+                <li data-lat="" data-lng="">Centre for Composite Technology</li>
+                <li data-lat="" data-lng="">Dr. Deshpande Centre (Centre for System & Device / FOSAPP)</li>
+                <li data-lat="" data-lng="">Dr. Senapathy Centre (Computer Centre)</li>
+                <li data-lat="" data-lng="">Material Science Research Centre (MSRC)</li>
+                <li data-lat="" data-lng="">NCCRD</li>
+                <li data-lat="" data-lng="">R & AC</li>
+                <li data-lat="" data-lng="">MRI / MRS</li>
+                <li data-lat="" data-lng="">Sophisticated Analytical Instruments Facility (SAIF)</li>
+            </ul>
+        </div><div class="heading" onclick="toggleDropdown('list3')"> COMMON FACILITIES
+            <ul id="list3" class="list">
+                <li data-lat="" data-lng="">Administrative Block</li>
+                <li data-lat="" data-lng="">Café Coffee Day / Higginbothams Book House</li>
+                <li data-lat="" data-lng="">Battery Research Centre</li>
+                <li data-lat="" data-lng="">Campus Cafe & Food Court</li>
+                <li data-lat="" data-lng="">Central Library</li>
+                <li data-lat="" data-lng="">Hospital</li>
+                <li data-lat="" data-lng="">Industrial Consultancy & Sponsored Research Centre (IC&SR)</li>
+                <li data-lat="" data-lng="">JEE / GATE Office</li>
+                <li data-lat="" data-lng="">New Sports Complex</li>
+                <li data-lat="" data-lng="">CFD HTML Annex</li>
+                <li data-lat="" data-lng="">New Academic Complex - II</li>
+                <li data-lat="" data-lng="">CFI Lab </li>
+            </ul>
+        </div>
+      </div>
+    <h1>Hello there. This is test! Please stand by! this is not a drill</h1>
+    <button id="createPathButton">Create Path</button>
+    <div id="map"></div>
+
+    <script src="acads.js"></script>
+</body>
+</html>
